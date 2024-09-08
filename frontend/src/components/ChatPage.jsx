@@ -18,7 +18,7 @@ const ChatPage = () => {
     const sendMessageHandler = async (receiverId) => {
         try {
             const res = await axios.post(
-              `https://appinsta-idan.onrender.com/api/v1/message/send/${receiverId}`,
+              `https://appinsta-t98u.onrender.com/api/v1/message/send/${receiverId}`,
               { textMessage },
               {
                 headers: {

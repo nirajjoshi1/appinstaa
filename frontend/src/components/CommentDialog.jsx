@@ -35,7 +35,7 @@ const CommentDialog = ({ open, setOpen }) => {
 
     try {
       const res = await axios.post(
-        `https://appinsta-idan.onrender.com/api/v1/post/${selectedPost?._id}/comment`,
+        `https://appinsta-t98u.onrender.com/api/v1/post/${selectedPost?._id}/comment`,
         { text },
         {
           headers: {

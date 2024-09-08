@@ -55,7 +55,7 @@ function App() {
 
   useEffect(() => {
     if (user) {
-      const socketio = io("https://appinsta-idan.onrender.com/", {
+      const socketio = io("https://appinsta-t98u.onrender.com", {
         query: {
           userId: user?._id,
         },

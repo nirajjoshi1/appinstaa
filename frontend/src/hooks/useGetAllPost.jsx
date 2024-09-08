@@ -10,7 +10,7 @@ const useGetAllPost = () => {
         const fetchAllPost = async () => {
             try {
                 const res = await axios.get(
-                  "https://appinsta-idan.onrender.com/api/v1/post/all",
+                  "https://appinsta-t98u.onrender.com/api/v1/post/all",
                   { withCredentials: true }
                 );
                 if (res.data.success) { 

@@ -26,7 +26,7 @@ const Signup = () => {
         try {
             setLoading(true);
             const res = await axios.post(
-              "https://appinsta-idan.onrender.com/api/v1/user/register",
+              "https://appinsta-t98u.onrender.com/api/v1/user/register",
               input,
               {
                 headers: {

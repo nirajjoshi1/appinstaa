@@ -11,7 +11,7 @@ const useGetUserProfile = (userId) => {
         const fetchUserProfile = async () => {
             try {
                 const res = await axios.get(
-                  `https://appinsta-idan.onrender.com/api/v1/user/${userId}/profile`,
+                  `https://appinsta-t98u.onrender.com/api/v1/user/${userId}/profile`,
                   { withCredentials: true }
                 );
                 if (res.data.success) { 

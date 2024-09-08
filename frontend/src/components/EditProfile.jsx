@@ -43,7 +43,7 @@ const EditProfile = () => {
         try {
             setLoading(true);
             const res = await axios.post(
-              "https://appinsta-idan.onrender.com/api/v1/user/profile/edit",
+              "https://appinsta-t98u.onrender.com/api/v1/user/profile/edit",
               formData,
               {
                 headers: {

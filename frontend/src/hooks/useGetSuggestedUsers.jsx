@@ -10,7 +10,7 @@ const useGetSuggestedUsers = () => {
         const fetchSuggestedUsers = async () => {
             try {
                 const res = await axios.get(
-                  "https://appinsta-idan.onrender.com/api/v1/user/suggested",
+                  "https://appinsta-t98u.onrender.com/api/v1/user/suggested",
                   { withCredentials: true }
                 );
                 if (res.data.success) { 

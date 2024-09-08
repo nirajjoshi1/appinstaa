@@ -11,7 +11,7 @@ const useGetAllMessage = () => {
         const fetchAllMessage = async () => {
             try {
                 const res = await axios.get(
-                  `https://appinsta-idan.onrender.com/api/v1/message/all/${selectedUser?._id}`,
+                  `https://appinsta-t98u.onrender.com/api/v1/message/all/${selectedUser?._id}`,
                   { withCredentials: true }
                 );
                 if (res.data.success) {  
