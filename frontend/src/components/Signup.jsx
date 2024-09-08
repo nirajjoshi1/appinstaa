@@ -26,7 +26,7 @@ const Signup = () => {
         try {
             setLoading(true);
             const res = await axios.post(
-              "http://localhost:8000/api/v1/user/register",
+              "https://appinsta-idan.onrender.com/api/v1/user/register",
               input,
               {
                 headers: {
@@ -36,7 +36,7 @@ const Signup = () => {
               }
             );
             if (res.data.success) {
-                navigate("/profile");
+                navigate("/");
                 toast.success(res.data.message);
                 setInput({
                     username: "",

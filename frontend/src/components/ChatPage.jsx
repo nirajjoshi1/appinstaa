@@ -17,12 +17,16 @@ const ChatPage = () => {
 
     const sendMessageHandler = async (receiverId) => {
         try {
-            const res = await axios.post(`http://localhost:8000/api/v1/message/send/${receiverId}`, { textMessage }, {
+            const res = await axios.post(
+              `https://appinsta-idan.onrender.com/api/v1/message/send/${receiverId}`,
+              { textMessage },
+              {
                 headers: {
-                    'Content-Type': 'application/json'
+                  "Content-Type": "application/json",
                 },
-                withCredentials: true
-            });
+                withCredentials: true,
+              }
+            );
             if (res.data.success) {
                 dispatch(setMessages([...messages, res.data.newMessage]));
                 setTextMessage("");
