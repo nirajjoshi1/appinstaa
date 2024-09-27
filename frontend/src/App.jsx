@@ -71,6 +71,7 @@ function App() {
       socketio.on('notification', (notification) => {
         dispatch(setLikeNotification(notification));
       });
+      
 
       return () => {
         socketio.close();
