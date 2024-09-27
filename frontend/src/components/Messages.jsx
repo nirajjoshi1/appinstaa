@@ -6,6 +6,24 @@ import { useSelector } from "react-redux";
 import useGetAllMessage from "@/hooks/useGetAllMessage";
 import useGetRTM from "@/hooks/useGetRTM";
 
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import {
+  ArrowLeft,
+  Info,
+  MoreVertical,
+  Phone,
+  Send,
+  Video,
+} from "lucide-react";
+import Link from "next/link";
+
 const Messages = ({ selectedUser }) => {
   // Call hooks to get messages and real-time updates
   useGetRTM();
