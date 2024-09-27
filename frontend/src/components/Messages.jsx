@@ -22,7 +22,6 @@ import {
   Send,
   Video,
 } from "lucide-react";
-import Link from "next/link";
 
 const Messages = ({ selectedUser }) => {
   // Call hooks to get messages and real-time updates
